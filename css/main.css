@@ -2364,7 +2364,8 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 .banner-area {
-  background: url(../img/banner-bg.jpg) center;
+    /* background: url(../img/banner-bg.jpg) center; */
+  background: url(../img/footer-bg.jpg) center;
   background-size: cover;
 }
 
@@ -2562,7 +2563,8 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 .feature-area {
-  background: url(../img/feature-bg.jpg) center;
+    /* background: url(../img/feature-bg.jpg) center; */
+  background: url(../img/footer-bg.jpg) center;
   background-size: cover;
 }
 
@@ -3564,6 +3566,10 @@ body.mobile-nav-active #mobile-nav-toggle {
 .commentform-area .form-control {
   border: none;
   background: #f9f9ff;
+}
+
+form input{
+    margin-top: 0.6em;
 }
 
 /*

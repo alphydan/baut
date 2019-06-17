@@ -35,7 +35,7 @@
 			    <div class="container main-menu">
 			    	<div class="row align-items-center justify-content-between d-flex">
 				      <div id="logo">
-				        <a href="index.html"><img src="../img/logo_baut.png" alt="BAut" title="Bermuda Automation" width="200px" /></a>
+				        <a href="../"><img src="../img/logo_baut_white.png" alt="BAut" title="Bermuda Automation" width="200px" /></a>
 					
 				      </div>
 				      <nav id="nav-menu-container">
@@ -84,7 +84,7 @@
 					<div class="row">
 						<div class="col-lg-4 col-md-6">
 							<div class="single-feature">
-								<a href="#" class="title d-flex flex-row">
+								<a href="#micro-tasks" class="title d-flex flex-row">
 									<span class="lnr lnr-frame-contract"></span>
 									<h4>Micro Tasks</h4>
 								</a>
@@ -99,7 +99,7 @@
 						</div>
 						<div class="col-lg-4 col-md-6">
 							<div class="single-feature">
-								<a href="#" class="title d-flex flex-row">
+								<a href="#auto-tasks" class="title d-flex flex-row">
 									<span class="lnr lnr-enter-down"></span>
 									<h4>Auto Tasks</h4>
 								</a>
@@ -115,7 +115,7 @@
 						</div>
 						<div class="col-lg-4 col-md-6">
 						  <div class="single-feature">
-						    <a href="#" class="title d-flex flex-row">
+						    <a href="#full-auto" class="title d-flex flex-row">
 						      <span class="lnr lnr-sort-amount-asc"></span>
 						      <h4>Full Auto</h4>
 						    </a>
@@ -143,8 +143,10 @@
 			  <div class="container" >
 
 
+			    <!-- Start Micro Tasks (0) -->
+
 			    <div class="section-top-border">
-			      <h3 class="mb-30">Micro Tasks</h3>
+			      <h3 class="mb-30" id="micro-tasks">Micro Tasks</h3>
 			      <div class="progress-table-wrap">
 				<p>Apple, Google, Outlook, twitter, etc don't always talk to each other. Micro-tasks make sure they do.</p>
 
@@ -203,106 +205,140 @@
 				    </div>
 				  </div>
 				  <!-- END Trigger  Action | Description  Table Row -->				  
-				  
-
-
 				  <!-- <a href="#" class="genric-btn info">Note: Micro Tasks Cannot be customised</a> -->
+
 				  
+				  <!-- End Micro Tasks (0) -->
 				</div>
+				<div>
+
+				  <!-- Start Auto Tasks (1) -->
+
+			    <div class="section-top-border">
+			      <h3 class="mb-30" id="auto-tasks">Auto Tasks</h3>
+			      <div class="progress-table-wrap">
+				<p>Automate tasks where the internet and your software need to interact.</p>
+
+				<div class="progress-table">
+				  <div class="table-head">
+				    <!-- <div class="serial">#</div> -->
+				    <div class="trig">Trigger</div>
+				    <div class="act">Action</div>
+				    <div class="desc">Description</div>
+				  </div>
+
+				  <!-- Trigger  Action | Description  Table Row -->
+				  <div class="table-row">
+				    <div class="trig"><span class="lnr lnr-calendar-full"></span> Every Monday  <br />
+				      <!-- <a href="#" class="genric-btn primary-border ">Location on your phone</a>  -->
+				    </div>
+
+				    <div class="act"><span class="lnr lnr-cog"></span> Re-calculate the rates <br />
+				      <!-- <a href="#" class="genric-btn primary-border circle">Google Calendar</a>.<br /> -->
+				    </div>
+				    <div class="desc">
+				      Our <a href="https://en.wikipedia.org/wiki/Internet_bot" target="_blank">bots</a> can navigate any site for you.  <br />
+				      Once there they can download or copy the latest data and update your prices / quotes / online-spreadsheet.
+				    </div>
+				  </div>
+				  <!-- END Trigger  Action | Description  Table Row -->
+				  
+				  <!-- Trigger  Action | Description  Table Row -->
+				  <div class="table-row">
+				    <div class="trig"><span class="lnr lnr-printer"></span> Scan Forms <br />
+				    </div>
+
+				    <div class="act"><span class="lnr lnr-magic-wand"></span> Translate to spreadsheet <br />
+				    </div>
+				    <div class="desc">
+				       Scan a form and drop it to a folder. <br />
+				       Our algorithms will read it and convert multiple choice or free text<sup>[<a href="#note1">1</a>]</sup> into
+				       a convenient spreadsheet.
+				    </div>
+				  </div>
+				  <!-- END Trigger  Action | Description  Table Row -->
+
+
+				  <!-- Trigger  Action | Description  Table Row -->
+				  <div class="table-row">
+				    <div class="trig"><span class="lnr lnr-users"></span> Social Media  <br />
+				      <!-- <a href="#" class="genric-btn primary-border circle">Stripe Payments</a>  -->
+				    </div>
+
+				    <div class="act"><span class="lnr lnr-cloud-upload"></span> Save mention <br />
+				      <!-- <a href="#" class="genric-btn primary-border circle">Gmail / Hotmail / Outlook / etc</a>.<br /> -->
+				    </div>
+				    <div class="desc">
+				      Every time your company gets mentioned (or twitter / facebook / emoo) <br />
+				      save the comments to a document and send email notification.  <br />Stay in charge of your brand!
+				    </div>
+				  </div>
+				  <!-- End Auto Tasks (1) -->
+				</div>
+				<span id="note1"> <sup>1</sup> The accuracy of hand writting recognition varies depending on context, hand writing and text.</span>
+
+				<div>
+
+				<!-- StartFull Auto (2) -->				  
+				<div class="section-top-border">
+				  <h3 class="mb-30" id="full-auto">Full auto</h3>
+				  <div class="progress-table-wrap">
+				    <p>More complex processes? No problem. <br />
+				      If it is a repetitive task and you can describe the steps, we can probably automate it. For example,<br />
+				      <blockquote class="blockquote">
+					<p class="mb-0">On the first Tuesday of the month, go to somesite.com, login with user and password & navigate to the reports section.
+					  Once there find the latest PDF report and find the total amount due. Create an invoice for all the companies on list X with
+					  the amount from the report & mail it to them (by email and paper).</p>
+				      </blockquote>
+				      
+				      <a href="#jmp-contact">contact us</a> for more details.
+				    </p>
+				  </div>
+				</div>
+
+				<!-- End Full Auto (2) -->
+			      </div>
+
 				
-			    </div>
+			      </div>
 
-
-
-
-
-
-			    
-					<div class="row d-flex justify-content-center">
-						<div class="col-md-12 pb-40 header-text text-center">
-							<h1 class="pb-10">Automation Examples:</h1>
-							<p>
-								Stop wasting employee time and embrace affordable automation
-							</p>
-						</div>
-					</div>							
-					<div class="row">
-						<div class="col-lg-3 col-md-6">
-							<div class="single-product">
-								<div class="thumb">
-									<img src="../img/p1_notify.png" alt="">
-								</div>
-								<div class="details">
-									<h4>Notifications &amp; reminders </h4>
-									<p>
-									  Automatically notify your customers or patients before their appointment. Leave a voice message or an SMS.
-									</p>
-									<a href="#" class="primary-btn text-uppercase">View Details</a>
-								</div>
-							</div>
-						</div>	
-						<div class="col-lg-3 col-md-6">
-							<div class="single-product">
-								<div class="thumb">
-									<img src="../img/form_bot2.png" alt="" height="180px">
-								</div>
-								<div class="details">
-									<h4>Submit Forms Automatically</h4>
-									<p>
-									  Do you fill in hundreds of similar forms for insurance, tax or claims?
-									  Let our virtual workers fill them in, email them or print them for you.
-									</p>
-									<a href="#" class="primary-btn text-uppercase">View Details</a>
-								</div>
-							</div>
-						</div>	
-						<div class="col-lg-3 col-md-6">
-							<div class="single-product">
-								<div class="thumb">
-									<img src="../img/p3_reports.png" alt="">
-								</div>
-								<div class="details">
-									<h4>Quotes &amp; Reports</h4>
-									<p>
-									  Do you create similar reports or quotes regularly? 
-									  If only the numbers, charts or prices change, we can probably fetch them for you
-									  and embed them in the document. 
-
-									</p>
-									<a href="#" class="primary-btn text-uppercase">View Details</a>
-								</div>
-							</div>
-						</div>	
-						<div class="col-lg-3 col-md-6">
-							<div class="single-product">
-								<div class="thumb">
-									<img src="../img/p4.png" alt="">
-								</div>
-								<div class="details">
-									<h4>Custom process</h4>
-									<p>
-									  If you can describe the steps, our <em>robots</em> can probably do it.
-									  Use our <a href="/bautexplore/" target="_blank">Automation Explorer</a> to find out if it's worth automating your task. Otherwise,
-									  <a href="/contact/">Contact us</a> to find out more.
-									</p>
-									<a href="#" class="primary-btn text-uppercase">View Details</a>
-								</div>
-							</div>
-						</div>																								
-
-					</div>
-					<a class="primary-btn" style="float:right; margin-top:20px;" href="#">More Ideas for Automation</a>
-				</div>
 
 			</section>
 			<!-- End products Area -->
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+			
 			<!-- Start home-about Area -->
 			<section class="home-about-area">
 				<div class="container-fluid">
 					<div class="row align-items-center">
 						<div class="col-lg-6 home-about-left no-padding">
-							<img class="mx-auto d-block img-fluid" src="../img/about-img.png" alt="">
+						  <!-- <img class="mx-auto d-block img-fluid" src="../img/about-img.png" alt=""> -->
+						  <img class="mx-auto d-block img-fluid" src="../img/python-code.jpg" alt="" style="border-radius:2%;">
+						  <!-- <img src="../img/python-code.jpg" alt=""> -->
 						</div>
 						<div class="col-lg-6 home-about-right no-padding">
 							<h1>Smart Software <br>
@@ -311,11 +347,12 @@
 							When solutions already exist we find them for you
 							</h5>
 							<p>
-							  When they don't, we create the bridges between software, websites and your goals.
-							  Our software is open source,so if your developers want to use it, they can.
-							  Of course, our expertise and speed will be hard  to match!
+							  When they don't, we create the bridges between software and your goals.
+							  Our software is <b>open source</b>.  This means that if our business closes,
+							  your employees or vendors can update it, upgrade it or adapt it.
+							  No vendor lock-in with us.  You will stay for the customer service.
 							</p>
-							<a class="primary-btn text-uppercase" href="#">Get Details</a>
+							<!-- <a class="primary-btn text-uppercase" href="#">Get Details</a> -->
 						</div>
 					</div>
 				</div>	
@@ -427,26 +464,22 @@
 						<div class="col-lg-6  col-md-12">
 							<div class="single-footer-widget newsletter">
 							  <h6>Contact</h6>
-							  <p> Let us get in touch with you </p>
-								<p>You can trust us: no promotions, not spam, no details shared.</p>
-								<div id="mc_embed_signup">
-									<form target="_blank" novalidate="true" action="https://spondonit.us12.list-manage.com/subscribe/post?u=1462626880ade1ac87bd9c93a&amp;id=92a4423d01" method="get" class="form-inline">
 
-										<div class="form-group row" style="width: 100%">
-											<div class="col-lg-8 col-md-12">
-												<input name="EMAIL" placeholder="Enter Email" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter Email '" required="" type="email">
-												<div style="position: absolute; left: -5000px;">
-													<input name="b_36c4fd991d266f23781ded980_aefe40901a" tabindex="-1" value="" type="text">
-												</div>
-											</div> 
-										
-											<div class="col-lg-4 col-md-12">
-												<button class="nw-btn primary-btn">Send<span class="lnr lnr-arrow-right"></span></button>
-											</div> 
-										</div>		
-										<div class="info"></div>
-									</form>
-								</div>		
+							  <p> Let us get in touch with you </p>
+						    <p>You can trust us: no promotions, no spam, no details shared.</p>
+						    <form action="https://jumprock.co/mail/BermudaAutomation" method="post" id="jmp-contact">
+						      <div class="form-group row" style="width:100%">
+							<input type="text" name="trapit" value="" style="display:none">
+							<input type="text" name="name" placeholder="Name" onfocus="this.placeholder=''" onblur="this.placeholder = 'Name'">
+							<input type="email" name="email" placeholder="email address" onfocus="this.placeholder=''" onblur="this.placeholder = 'email address'">
+							<!-- <input type="text" name="message" placeholder="message" onfocus="this.placeholder=''" onblur="this.placeholder = 'short message'"> -->
+							<input class="nw-btn primary-btn" style="width:40%;" type="submit" value="Contact Us" />
+							<input type="hidden" name="after" value="https://baut.bm">
+						      </div>
+						    </form>
+
+
+							  
 							</div>
 						</div>
 					</div>
