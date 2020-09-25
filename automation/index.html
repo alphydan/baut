@@ -341,8 +341,8 @@
               and your goals.  Our software is <b>open source</b>.
               This means that if you chose to change providers, your
               employees or vendors can update it, upgrade it or adapt
-              it to your needs.  No vendor lock-in.  You will stay for
-              the insights and customer service.
+              it to your needs.  No vendor lock-in.  Our customers stay for
+              the insights and the customer service.
             </p>
             <!-- <a class="primary-btn text-uppercase" href="#">Get Details</a> -->
           </div>
@@ -452,18 +452,23 @@
 
               <p> Let us get in touch with you </p>
               <p>You can trust us: no promotions, no spam, no details shared.</p>
-              <form action="https://jumprock.co/mail/BermudaAutomation" method="post" id="jmp-contact">
-                <div class="form-group row" style="width:100%">
-                  <input type="text" name="trapit" value="" style="display:none">
-                  <input type="text" name="name" placeholder="Name" onfocus="this.placeholder=''" onblur="this.placeholder = 'Name'">
-                  <input type="email" name="email" placeholder="email address" onfocus="this.placeholder=''" onblur="this.placeholder = 'email address'">
-                  <!-- <input type="text" name="message" placeholder="message" onfocus="this.placeholder=''" onblur="this.placeholder = 'short message'"> -->
-                  <input class="nw-btn primary-btn" style="width:40%;" type="submit" value="Contact Us" />
-                  <input type="hidden" name="after" value="https://baut.bm">
-                </div>
-              </form>
 
-
+	      <form id="contactform" action="https://formsubmit.co/hello@baut.bm" method="POST">
+		<div class="fields">
+		  <div class="field half">
+		    <input type="text" name="name" id="name" placeholder="Name">
+		  </div>
+		  <div class="field half">
+		    <input type="email" name="email" id="email" placeholder="Email">
+		  </div>
+		  <input type="text" name="_honey" style="display:none">
+		  <input type="hidden" name="_captcha" value="false">
+		</div>
+		<ul class="actions">
+		  <li><input type="submit" value="Contact Us" class="nw-btn primary-btn" style="width:40%"></li>
+		</ul>
+	      </form>
+							  
 
             </div>
           </div>

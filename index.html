@@ -1,4 +1,4 @@
-	<!DOCTYPE html>
+<!DOCTYPE html>
 	<html lang="zxx" class="no-js">
 	<head>
 		<!-- Mobile Specific Meta -->
@@ -97,7 +97,7 @@
 									<p>
 									  Automatically notify your customers or patients before their appointment. Leave a voice message or an SMS.
 									</p>
-									<a href="#" class="primary-btn text-uppercase">View Details</a>
+
 								</div>
 							</div>
 						</div>
@@ -112,7 +112,7 @@
 									  Do you fill in hundreds of similar forms for insurance, tax or claims?
 									  Let our virtual workers fill them in, email them or print them for you.
 									</p>
-									<a href="#" class="primary-btn text-uppercase">View Details</a>
+
 								</div>
 							</div>
 						</div>
@@ -129,7 +129,7 @@
 									  and embed them in the document.
 
 									</p>
-									<a href="#" class="primary-btn text-uppercase">View Details</a>
+
 								</div>
 							</div>
 						</div>
@@ -142,16 +142,15 @@
 									<h4>Custom process</h4>
 									<p>
 									  If you can describe the steps, our <em>robots</em> can probably do it.
-									  Use our <a href="#" target="_blank">Automation Explorer</a> to find out if it's worth automating your task. Otherwise,
-									  <a href="/contact/">Contact us</a> to find out more.
+									  <a href="#contactform" >Contact us</a> to find out if it's worth automating your task. 
 									</p>
-									<a href="#" class="primary-btn text-uppercase">View Details</a>
+
 								</div>
 							</div>
 						</div>
 
 					</div>
-					<a class="primary-btn" style="float:right; margin-top:20px;" href="./automation/">More Ideas for Automation</a>
+					<a class="primary-btn" style="float:right; margin-top:20px;" href="https://blog.baut.bm/">More Ideas for Automation</a>
 				</div>
 
 			</section>
@@ -180,16 +179,22 @@
 						    <h6>Contact</h6>
 						    <p> Let us get in touch with you </p>
 						    <p>You can trust us: no promotions, not spam, no details shared.</p>
-						    <form action="https://jumprock.co/mail/BermudaAutomation" method="post">
-						      <div class="form-group row" style="width:100%">
-							<input type="text" name="trapit" value="" style="display:none">
-							<input type="text" name="name" placeholder="Name" onfocus="this.placeholder=''" onblur="this.placeholder = 'Name'">
-							<input type="email" name="email" placeholder="email address" onfocus="this.placeholder=''" onblur="this.placeholder = 'email address'">
-							<!-- <input type="text" name="message" placeholder="message" onfocus="this.placeholder=''" onblur="this.placeholder = 'short message'"> -->
-							<input class="nw-btn primary-btn" style="width:40%;" type="submit" value="Contact Us" />
-							<input type="hidden" name="after" value="https://baut.bm">
-						      </div>
-						    </form>
+
+	      <form id="contactform" action="https://formsubmit.co/hello@baut.bm" method="POST">
+		<div class="fields">
+		  <div class="field half">
+		    <input type="text" name="name" id="name" placeholder="Name">
+		  </div>
+		  <div class="field half">
+		    <input type="email" name="email" id="email" placeholder="Email">
+		  </div>
+		  <input type="text" name="_honey" style="display:none">
+		  <input type="hidden" name="_captcha" value="false">
+		</div>
+		<ul class="actions">
+		  <li><input type="submit" value="Contact Us" class="nw-btn primary-btn" style="width:40%"></li>
+		</ul>
+	      </form>
 
 						  </div>
 						</div>
